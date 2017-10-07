@@ -1,0 +1,131 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Sebastian Perez} % Your name
+\address{2424 Sahalee Dr. East \\ Sammamish, WA} % Your address
+\address{(425)~$\cdot$~495~$\cdot$~9894 \\ sebastianperez2017@u.northwestern.edu}
+\address{Github: sgp715} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Northwestern University} \hfill {\em Graduated, June 2017} \\ 
+B.S. in Computer Science, McCormick School of Engineering \\
+Systems and Artificial Intelligence
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Denodo}{July 2017 - Present}{Software Engineer}{Palo Alto, CA}
+\item Architecturing, deigning and implementing features Denodo's data virtualization platform
+\item Developing performant Java code while 
+\item Experiencing and learning the language of design patterns first hand
+\item Extensive TestNG
+\end{rSubsection}
+
+\begin{rSubsection}{FashionSense}{January 2017 - May 2017}{Lead Software Developer}{Evanston, IL}
+\item Created a startup out of the Northwestern University Garage in order to provide deep learning powered fashion recommendations to the retailer
+\item Used Selenium to scrape images and assemble a labeled clothing dataset for use in neural net training
+\item Architected and a production Convolutional Neural Network for fashion-related computer vision
+\item Created API using Flask and Docker to serve up our models in accordance with restful conventions
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Nuance Communication}{June 2016 - September 2016}{Software Developer Intern}{Seattle, WA}
+\item Played an integral role in a ground-up rebuild of the Nuance Developers portal
+\item Worked on a small agile development team that followed scrum principles
+\item Used Docker Compose to link Docker containers and build a flexible site based on the
+Microservices architecture
+\item Created containerized webapp that used NodeJs along with React and Flux
+\item Developed containers that used the Python web framework Tornado to create restful APIs that served up database resources
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Northwestern University}{April, 2016 - June, 2016}{Research Assistant}{Evanston, IL}
+\item Researched automatic detection of PHP vulnerabilities in WordPress extensions using Static
+Analysis
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+\begin{oSubsection}{Binary Classifier Convolutional Neural Network}
+	\item Using Google's Tensorflow framework architectured a neural network from scratch that can achieve $>$ 90\% accuracy in classifying images
+\end{oSubsection}
+\begin{oSubsection}{Rust Compression Project}
+	\item Learned Rust programming language in order to build a fast and memory safe implementation of the Huffman Encoding algorithm capable of compressing and decompressing text files
+\end{oSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Python, Javascript, C, C++, Rust, Bash \\
+Frameworks & NumPy, pandas, scikit-learn, Tensorflow, Flask, Node.js, React, Flux \\
+Tools & Git, Jira, Docker \\
+
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXTRACURRICULARS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extracurriculars}
+
+\begin{oSubsection}{Supplies for Dreams}
+	\item Mentoring underpriveledged youth while supplying them with constructive lesson plans and the supplies to carry them out
+\end{oSubsection}
+
+\begin{oSubsection}{Peer Tutor}
+	\item Created and taught custom study plans to fellow students in need of academic tutoring
+\end{oSubsection}
+
+\end{rSection}
+
+
+\end{document}
