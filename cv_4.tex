@@ -23,9 +23,9 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-
+\usepackage{hyperref}
 \name{Sebastian Perez} % Your name
-\address{Redwood City, CA} % Your address
+\address{Palo Alto, CA} % Your address
 \address{(425)~$\cdot$~495~$\cdot$~9894 \\ sebastiangabinoperez1995@gmail.com}
 \address{Github: sgp715} % Your phone number and email
 
@@ -39,7 +39,8 @@
 
 {\bf Northwestern University} \hfill {\em Graduated, June 2017} \\ 
 B.S. in Computer Science, McCormick School of Engineering \\
-Systems and Artificial Intelligence
+Systems and Artificial Intelligence \\
+Programming Languages: Python, Java, C++ \\
 
 \end{rSection}
 
@@ -49,14 +50,14 @@ Systems and Artificial Intelligence
 \begin{rSection}{Experience}
 
 \begin{rSubsection}{Denodo}{July 2017 - Present}{Software Engineer}{Palo Alto, CA}
-\item Architecturing, designing and implementing features for Denodo's data virtualization platform
-\item Developing performant Java code while balancing the needs of disparate data sources
+\item Designing, implementing and testing features for Denodo's data virtualization platform
+\item Developing performant Java code that works intimately with the JDBC API to balance the capabilites of disparate datasources (Spark, Impala, Redshift, MySQL, Presto, etc.)
+\item Developing features to connect a variety of RESTful webservices using multiple pagination patterns
 \item Experiencing and learning the language of design patterns first hand
-\item Extensive experience writing tests using the TestNG framework
 \end{rSubsection}
 
 \begin{rSubsection}{FashionSense}{January 2017 - May 2017}{Lead Software Developer}{Evanston, IL}
-\item Created a startup out of the Northwestern University Garage in order to provide deep learning powered fashion recommendations to the retailer
+\item Created a startup out of the Northwestern University Garage in order to provide machine learning powered fashion recommendations to the retailer
 \item Used Selenium to scrape images and assemble a labeled clothing dataset for use in neural net training
 \item Architected and a production Convolutional Neural Network for fashion-related computer vision
 \item Created API using Flask and Docker to serve up our models in accordance with restful conventions
@@ -83,16 +84,29 @@ Analysis
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
+%	ACCOMPLISHMENTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Accomplishments}
+
+\begin{oSubsection}{Microsoft 2016 Build The Shield Finalist}
+	\item Qualification round - worked in a small team to solve capture the flag style challenges. Competed against national pool and qualified for final round.
+	\item Final round - worked in a small team directly competing against other teams in attack and defense style competition.
+\end{oSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
 %	PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Projects}
 
-\begin{oSubsection}{Binary Classifier Convolutional Neural Network}
+\begin{oSubsection}{Binary Classifier Convolutional Neural Network - \url{https://github.com/sgp715/binary_classifier_CNN}}
 	\item Using Google's Tensorflow framework architectured a neural network from scratch that can achieve $>$ 90\% accuracy in classifying images to certain clothing categories
 \end{oSubsection}
-\begin{oSubsection}{Rust Compression Project}
-	\item Learned Rust programming to create a threaded memory safe implementation of John the Ripper 
+\begin{oSubsection}{Simple Image Annotator- \url{https://github.com/sgp715/simple_image_annotator}}
+	\item A image annotator for generating a labeled dataset for CNN training that runs in the browser - focused on easy setup and use
 \end{oSubsection}
 
 \end{rSection}
@@ -104,28 +118,11 @@ Analysis
 \begin{rSection}{Technical}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & Python, Java, Rust, C++, JavaScript \\
-Frameworks & NumPy, pandas, scikit-learn, Tensorflow, Flask, Node.js, React, Flux \\
-Tools & Git, Jira, Docker \\
+Frameworks & NumPy, pandas, scikit-learn, Tensorflow, Flask \\
+Tools & Git, Docker, Maven, Sonar, IntelliJ \\
 
 \end{tabular}
 
 \end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EXTRACURRICULARS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Extracurriculars}
-
-\begin{oSubsection}{Supplies for Dreams}
-	\item Mentoring underpriveledged youth while supplying them with constructive lesson plans and the supplies to carry them out
-\end{oSubsection}
-
-\begin{oSubsection}{Peer Tutor}
-	\item Created and taught custom study plans to fellow students in need of academic tutoring
-\end{oSubsection}
-
-\end{rSection}
-
 
 \end{document}
